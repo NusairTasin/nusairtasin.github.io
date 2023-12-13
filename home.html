@@ -18,6 +18,43 @@
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nusair Tasin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile.png" alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Nusair Tasin</h1>
+            <p class="section__text__p2">Front-End Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/portfolio.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin_black.png" alt="mylinkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/nusair-tasin-37868a18b/'">
+                <img src="./assets/github.png" alt="mygithub" class="icon" onclick="location.href='https://github.com/NusairTasin'">
+                <img src="./assets/code-forces-black.png" alt="mycodeforces" class="icon" onclick="location.href='https://codeforces.com/profile/Nusair'">
+            </div>
+        </div>
+    </section> 
+
     <script src="home.js"></script>
 </body>
 </html>
