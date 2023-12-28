@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1258px){
     #desktop-nav {
         display: none;
     }
@@ -28,6 +28,9 @@
     }
     .arrow {
         display: none;
+    }
+    #projects {
+        margin: 0 15vw;
     }
     section, .section-container {
         height: fit-content;
@@ -52,6 +55,9 @@
     #profile {
         height: 83vh;
         margin-bottom: 0;
+    }
+    #projects {
+        margin: 0 4rem;
     }
     article {
         font-size: 1rem;
