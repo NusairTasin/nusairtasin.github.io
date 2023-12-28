@@ -425,8 +425,12 @@ article .icon {
 }
 
 /* Footer */
+footer nav {
+    height: 12vh;
+}
+
 footer {
-    height: 26vh;
+    height: 27vh;
     margin: 0 1rem;
     background: rgb(53, 53, 53);
     margin: 0;
@@ -444,4 +448,17 @@ footer a:hover {
     color: rgb(28, 72, 176);
     text-decoration: none;
     text-decoration-color: none;
+}
+
+.wifi-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding-bottom: 1rem;
+}
+
+.wifi-qr a {
+    font-weight: 300;
+    font-size: 0.9rem;
 }

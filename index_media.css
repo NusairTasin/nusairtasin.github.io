@@ -72,7 +72,7 @@
     .logo {
         font-size: 1.24rem;
     }
-    .nav-links {
+    .nav-links, .wifi-qr {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
@@ -93,5 +93,8 @@
     }
     footer {
         padding-top: 2rem;
+    }
+    footer nav {
+        height: 15vh;
     }
 }
