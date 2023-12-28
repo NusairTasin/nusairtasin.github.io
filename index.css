@@ -104,8 +104,8 @@ a:hover {
 }
 .menu-links {
     position: absolute;
-    top: 100%;
-    right: 105%;
+    top: 150%;
+    right: 115%;
     background-color: white;
     width: fit-content;
     max-height: 0;
@@ -214,6 +214,10 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+.fiverr {
+    height: 1.8rem;
 }
 
 /* Buttons */
