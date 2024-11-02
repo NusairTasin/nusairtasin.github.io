@@ -16,10 +16,10 @@ const Hero = () => {
         animate={{y: 0, opacity:1}}
         transition={{duration: 0.8, delay: 0.2}}
         className="flex max-w-[600px]  flex-col items-center justify-center gap-3 text-center">
-          <h1 className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent opacity-100 text-4xl font-lite transition-all duration-300 sm:text-7xl cursor-default"
+          <h1 className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent opacity-100 text-4xl font-semibold transition-all duration-300 sm:text-7xl cursor-default"
           style={{
             backgroundSize: '300% 300%',
-            animation: 'gradient-animation 6s ease-all infinite',
+            animation: 'gradient-animation 2s ease infinite',
         }}
           >Nusair Tasin
           <style>
@@ -39,7 +39,7 @@ const Hero = () => {
             </style>
           </h1>
           <h3 className="bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent opacity-85 hover:opacity-100 text-2xl transition-all duration-300 md:text-3xl cursor-default">Web Developer</h3>
-          <p className="md:text-base text-pretty text-sm text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum debitis ipsam nisi assumenda laudantium error a quaerat ex, nesciunt quam atque fuga. Deserunt iste expedita explicabo voluptatibus iusto recusandae eaque?</p>
+          <p className="md:text-base text-pretty text-lg text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum debitis ipsam nisi assumenda laudantium error a quaerat ex, nesciunt quam atque fuga. Deserunt iste expedita explicabo voluptatibus iusto recusandae eaque?</p>
         </motion.div>
     </div>
   </div>;
