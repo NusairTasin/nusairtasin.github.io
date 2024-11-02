@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className="text-white fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 sm:px-16 px-12 py-5 backdrop-blur-md md:justify-evenly">
         <a
           href="#home"
-          className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent opacity-90 hover:opacity-100 text-2xl font-semibold transition-all duration-300"
+          className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent opacity-90 hover:opacity-100 text-xl sm:text-2xl font-semibold transition-all duration-300"
         >
           Nusair Tasin
         </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
         )}
         {isOpen && (
           <div
-            className={`fixed right-0 top-[84px] md:hidden flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-800 bg-black/90 py-12 px-11 ${
+            className={`fixed right-0 top-[79px] md:hidden flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-800 bg-black/90 py-12 px-11 ${
               isOpen ? "block" : "hidden"
             }`}
           >
