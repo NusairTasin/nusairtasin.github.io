@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="text-white fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 sm:px-16 px-12 py-5 backdrop-blur-md md:justify-evenly">
+      <nav className="text-white fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/50 sm:px-16 px-12 py-5 backdrop-blur-md md:justify-evenly">
         <a
           href="#home"
           className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent opacity-90 hover:opacity-100 text-xl sm:text-2xl font-semibold transition-all duration-300"
@@ -66,7 +66,7 @@ const Navbar = () => {
         )}
         {isOpen && (
           <div
-            className={`fixed left-0 top-[9.1vh] md:hidden flex h-screen/2 w-full flex-col items-center justify-center gap-10 bg-black/90 py-12 px-11 ${
+            className={`fixed left-0 right-0 top-[9.1vh] md:hidden flex h-screen/2 w-screen flex-col items-center justify-center gap-10 bg-black/90 py-12 px-11 ${
               isOpen ? "block" : "hidden"
             }`}
           >
