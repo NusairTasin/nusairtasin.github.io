@@ -1,8 +1,23 @@
+import { ReactNode } from "react"
 import project1 from "../assets/1.png"
 import project2 from "../assets/2.png"
 import project3 from "../assets/3.png"
 import project4 from "../assets/4.png"
 import { motion } from 'framer-motion'
+
+interface Project {
+    image: string,
+    title: string,
+    description: string,
+    technologies: string[]
+}
+interface ScrollProps {
+    children: ReactNode;
+}
+interface ProjectProps {
+    project: Project;
+}
+
 
 const projectsData = [
     {
@@ -31,7 +46,7 @@ const projectsData = [
     },
 ]
 
-const ScrollReveal = ({children}) => {
+const ScrollReveal = ({children}: ScrollProps) => {
     return (
         <motion.div
         initial={{opacity:0, y:100}}
@@ -44,7 +59,7 @@ const ScrollReveal = ({children}) => {
     )
 }
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project }: ProjectProps) => {
     return (
         <ScrollReveal>
             <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
