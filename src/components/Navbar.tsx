@@ -8,10 +8,10 @@ const menuItems = [
   { title: "Contact", path: "#contact" },
 ];
 const linkItems = [
-  { logo: <BsYoutube />, path: "#link", color: "hover:text-red-500" },
-  { logo: <BsLinkedin />, path: "link", color: "hover:text-blue-500" },
-  { logo: <BsGithub />, path: "link", color: "hover:text-orange-500" },
-  { logo: <BsTwitterX />, path: "link", color: "hover:text-white" },
+  { logo: <BsYoutube />, path: "https://youtube.com", color: "hover:text-red-500" },
+  { logo: <BsLinkedin />, path: "https://linkedin.com/in/nusair-tasin", color: "hover:text-blue-500" },
+  { logo: <BsGithub />, path: "https://github.com/NusairTasin", color: "hover:text-orange-500" },
+  { logo: <BsTwitterX />, path: "https://twitter.com", color: "hover:text-white" },
 ];
 
 const Navbar = () => {
@@ -87,8 +87,8 @@ const Navbar = () => {
                 <li
                   key={index}
                   className={`cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100 ${link.color}`}
-                >
-                  {link.logo}
+                ><a href={link.path}>{link.logo}</a>
+                  
                 </li>
               ))}
             </ul>

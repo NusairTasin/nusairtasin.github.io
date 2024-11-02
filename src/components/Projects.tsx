@@ -9,7 +9,8 @@ interface Project {
     image: string,
     title: string,
     description: string,
-    technologies: string[]
+    technologies: string[],
+    path: string
 }
 interface ScrollProps {
     children: ReactNode;
@@ -24,25 +25,29 @@ const projectsData = [
         image: project1,
         title: "Habit Tracker",
         description: "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
-        technologies: ["HTML", "CSS", "Javascript", "MySQL"]
+        technologies: ["HTML", "CSS", "Javascript", "MySQL"],
+        path: "https://youtube.com"
     },
     {
         image: project2,
         title: "Tracker Habit",
         description: "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
-        technologies: ["HTML", "CSS", "Javascript", "MySQL"]
+        technologies: ["HTML", "CSS", "Javascript", "MySQL"],
+        path: "#contact"
     },
     {
         image: project3,
         title: "Binance",
         description: "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
-        technologies: ["HTML", "CSS", "Javascript", "MySQL"]
+        technologies: ["HTML", "CSS", "Javascript", "MySQL"],
+        path: "https://twitter.com"
     },
     {
         image: project4,
         title: "Bybit",
         description: "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
-        technologies: ["HTML", "CSS", "Javascript", "MySQL"]
+        technologies: ["HTML", "CSS", "Javascript", "MySQL"],
+        path: "#link"
     },
 ]
 
@@ -65,19 +70,33 @@ const ProjectCard = ({ project }: ProjectProps) => {
             <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
                 <img src={project.image} alt="" className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]"/>
 
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-5 justify-center items-center md:justify-start md:items-start">
                     <div className="flex flex-col gap-3 ">
                         <div className="text-xl font-semibold">{project.title}</div>
                         <p className="text-gray-400">{project.description}</p>
+                        
                     </div>
 
                     <div className="flex flex-wrap gap-5">
                         {project.technologies.map((tech:string, index:number) => (
-                            <span key={index} className=" rounded-lg bg-black p-1">{tech}</span>
+                            <>
+                            <span key={index} className="relative group rounded-lg p-1 transition-all duration-300">
+                                {tech}
+                                <span className="left-0 bottom-0 h-1 w-full bg-gradient-to-r from-blue-500 to-pink-600 rounded-xl transform -translate-x-[10%] transition-transform duration-300 group-hover:translate-x-0 group-hover:absolute"></span>
+                            </span>
+                            
+                            </>
                         ))}
+                            
+                    </div>
+
+                    <div>
+                        <a href={project.path}><button className="flex justify-center items-center gap-1 hover:bg-gray-900 p-2 rounded-xl transition-all duration-300 bg-black border border-purple-950">Github</button></a>
+                        
                     </div>
                 </div>
             </div>
+                
         </ScrollReveal>
     )
 }
