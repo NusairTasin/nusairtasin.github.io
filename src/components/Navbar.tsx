@@ -8,10 +8,26 @@ const menuItems = [
   { title: "Contact", path: "#contact" },
 ];
 const linkItems = [
-  { logo: <BsYoutube />, path: "https://youtube.com", color: "hover:text-red-500" },
-  { logo: <BsLinkedin />, path: "https://linkedin.com/in/nusair-tasin", color: "hover:text-blue-500" },
-  { logo: <BsGithub />, path: "https://github.com/NusairTasin", color: "hover:text-orange-500" },
-  { logo: <BsTwitterX />, path: "https://twitter.com", color: "hover:text-white" },
+  {
+    logo: <BsYoutube />,
+    path: "https://youtube.com",
+    color: "hover:text-red-500",
+  },
+  {
+    logo: <BsLinkedin />,
+    path: "https://linkedin.com/in/nusair-tasin",
+    color: "hover:text-blue-500",
+  },
+  {
+    logo: <BsGithub />,
+    path: "https://github.com/NusairTasin",
+    color: "hover:text-orange-500",
+  },
+  {
+    logo: <BsTwitterX />,
+    path: "https://twitter.com",
+    color: "hover:text-white",
+  },
 ];
 
 const Navbar = () => {
@@ -22,7 +38,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="text-white fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/50 sm:px-16 px-12 py-5 backdrop-blur-md md:justify-evenly">
+      <nav className="text-white fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-[#00091d]/50 sm:px-16 px-12 py-5 backdrop-blur-md md:justify-evenly">
         <a
           href="#home"
           className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent opacity-90 hover:opacity-100 text-xl sm:text-2xl font-semibold transition-all duration-300"
@@ -87,8 +103,8 @@ const Navbar = () => {
                 <li
                   key={index}
                   className={`cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100 ${link.color}`}
-                ><a href={link.path}>{link.logo}</a>
-                  
+                >
+                  <a href={link.path}>{link.logo}</a>
                 </li>
               ))}
             </ul>
