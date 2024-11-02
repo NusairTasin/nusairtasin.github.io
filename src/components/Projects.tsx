@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client"
 import project1 from "../assets/1.png"
 import project2 from "../assets/2.png"
 import project3 from "../assets/3.png"
