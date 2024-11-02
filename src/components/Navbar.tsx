@@ -66,7 +66,7 @@ const Navbar = () => {
         )}
         {isOpen && (
           <div
-            className={`fixed right-0 top-[84px] md:hidden flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-800 bg-black/90 p-12 ${
+            className={`fixed right-0 top-[84px] md:hidden flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-800 bg-black/90 py-12 px-11 ${
               isOpen ? "block" : "hidden"
             }`}
           >
@@ -82,7 +82,7 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <ul className="grid grid-cols-4 gap-7">
+            <ul className="flex flex-wrap gap-5">
               {linkItems.map((link, index) => (
                 <li
                   key={index}
