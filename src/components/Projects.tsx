@@ -45,7 +45,7 @@ const ScrollReveal = ({children}) => {
     )
 }
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({ project }) => {
     return (
         <ScrollReveal>
             <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
@@ -58,7 +58,7 @@ const ProjectCard = ({project}) => {
                     </div>
 
                     <div className="flex flex-wrap gap-5">
-                        {project.technologies.map((tech, index) => (
+                        {project.technologies.map((tech:string, index:number) => (
                             <span key={index} className=" rounded-lg bg-black p-1">{tech}</span>
                         ))}
                     </div>
