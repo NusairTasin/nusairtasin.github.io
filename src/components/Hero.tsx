@@ -9,14 +9,14 @@ const Hero = () => {
       animate={{y: 0, opacity:1}}
       transition={{duration: 0.8, delay: 0.2}}
       >
-        <img src={profile} alt="profile" className="w-[300px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600 md:w-[280px]" />
+        <img src={profile} alt="profile" className="w-[200px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600 md:w-[280px]" />
       </motion.div>
         <motion.div
         initial={{y: +50, opacity:0}}
         animate={{y: 0, opacity:1}}
         transition={{duration: 0.8, delay: 0.2}}
         className="flex max-w-[600px]  flex-col items-center justify-center gap-3 text-center">
-          <h1 className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent opacity-100 text-5xl font-lite transition-all duration-300 md:text-7xl cursor-default"
+          <h1 className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent opacity-100 text-4xl font-lite transition-all duration-300 sm:text-7xl cursor-default"
           style={{
             backgroundSize: '300% 300%',
             animation: 'gradient-animation 6s ease-all infinite',
