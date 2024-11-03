@@ -7,7 +7,7 @@ const Hero = () => {
       id="home"
       className="px-9 flex min-h-screen w-full items-center justify-center py-28 md:px-32"
     >
-      <div className="flex flex-col items-center justify-center gap-10 text-white">
+      <div className=" flex flex-col items-center justify-center gap-10 text-white">
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -16,7 +16,7 @@ const Hero = () => {
           <img
             src={profile}
             alt="profile"
-            className="w-[200px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600 md:w-[280px]"
+            className="w-[200px] cursor-pointer rounded-3xl shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-indigo-600 md:w-[260px]"
           />
         </motion.div>
         <motion.div
