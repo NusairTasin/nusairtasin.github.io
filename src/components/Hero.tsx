@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="px-16 flex min-h-screen w-full items-center justify-center py-28 md:px-32"
+      className="px-9 flex min-h-screen w-full items-center justify-center py-28 md:px-32"
     >
       <div className="flex flex-col items-center justify-center gap-10 text-white">
         <motion.div
@@ -52,7 +52,7 @@ const Hero = () => {
           <h3 className="bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-transparent opacity-85 hover:opacity-100 text-2xl transition-all duration-300 md:text-3xl cursor-default">
             Web Developer
           </h3>
-          <p className="md:text-base text-pretty text-lg text-gray-400">
+          <p className="md:text-base text-pretty text-sm text-gray-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
             debitis ipsam nisi assumenda laudantium error a quaerat ex, nesciunt
             quam atque fuga. Deserunt iste expedita explicabo voluptatibus iusto
