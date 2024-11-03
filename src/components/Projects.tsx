@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import project1 from "../assets/1.png";
+import project1 from "../assets/pingpong1.png";
 import project2 from "../assets/2.png";
 import project3 from "../assets/3.png";
 import project4 from "../assets/4.png";
@@ -22,17 +22,17 @@ interface ProjectProps {
 const projectsData = [
   {
     image: project1,
-    title: "Habit Tracker",
+    title: "Ping Pong",
     description:
-      "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
-    technologies: ["HTML", "CSS", "Javascript", "MySQL"],
-    path: "https://youtube.com",
+      "My partner Adeeb and I created a 2-player ping pong game for our Structured Programming Course project. This project marked my first experience in game development, and I thoroughly enjoyed the process of bringing our ideas to life!",
+    technologies: ["Raylib", "C++"],
+    path: "https://github.com/NusairTasin/Ping-Pong",
   },
   {
     image: project2,
     title: "Tracker Habit",
     description:
-      "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
+      "This is a dummy project.",
     technologies: ["HTML", "CSS", "Javascript", "MySQL"],
     path: "#contact",
   },
@@ -40,7 +40,7 @@ const projectsData = [
     image: project3,
     title: "Binance",
     description:
-      "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
+      "This is a dummy project.",
     technologies: ["HTML", "CSS", "Javascript", "MySQL"],
     path: "https://twitter.com",
   },
@@ -48,7 +48,7 @@ const projectsData = [
     image: project4,
     title: "Bybit",
     description:
-      "This is a dummy project. Not a real project. So this section will be soon replaced by a real project. Please standby till then. Have a good day!",
+      "This is a dummy project.",
     technologies: ["HTML", "CSS", "Javascript", "MySQL"],
     path: "#link",
   },
@@ -91,14 +91,14 @@ const ProjectCard = ({ project }: ProjectProps) => {
                   className="relative group rounded-lg p-1 transition-all duration-300"
                 >
                   {tech}
-                  <span className="left-0 bottom-0 h-1 w-full bg-gradient-to-r from-blue-500 to-pink-600 opacity-80 rounded-xl transform -translate-x-[10%] transition-transform duration-300 group-hover:translate-x-0 group-hover:absolute"></span>
+                  <span className="left-0 bottom-0 h-1 w-full bg-gradient-to-r from-blue-500 to-purple-600 opacity-80 rounded-xl transform -translate-x-[10%] transition-transform duration-300 group-hover:translate-x-0 group-hover:absolute"></span>
                 </span>
               </>
             ))}
           </div>
 
           <div>
-            <a href={project.path}>
+            <a href={project.path} target="_blank">
               <button className="flex justify-center items-center gap-1 hover:bg-gray-900 p-2 rounded-xl transition-all duration-300 bg-black border border-purple-950">
                 Github
               </button>
