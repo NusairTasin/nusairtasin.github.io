@@ -64,7 +64,7 @@ const Navbar = () => {
               key={index}
               className={`cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100 ${link.color}`}
             >
-              {link.logo}
+              <a href={link.path} target="_blank">{link.logo}</a>
             </li>
           ))}
         </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
                   key={index}
                   className={`cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100 ${link.color}`}
                 >
-                  <a href={link.path}>{link.logo}</a>
+                  <a href={link.path} target="_blank">{link.logo}</a>
                 </li>
               ))}
             </ul>
