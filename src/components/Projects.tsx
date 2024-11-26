@@ -1,8 +1,5 @@
 import { ReactNode } from "react";
 import project1 from "../assets/pingpong1.png";
-import project2 from "../assets/2.png";
-import project3 from "../assets/3.png";
-import project4 from "../assets/4.png";
 import { motion } from "framer-motion";
 
 interface Project {
@@ -27,31 +24,7 @@ const projectsData = [
       "My partner Adeeb and I created a 2-player ping pong game for our Structured Programming Course project. This project marked my first experience in game development, and I thoroughly enjoyed the process of bringing our ideas to life!",
     technologies: ["Raylib", "C++"],
     path: "https://github.com/NusairTasin/Ping-Pong",
-  },
-  {
-    image: project2,
-    title: "Tracker Habit",
-    description:
-      "This is a dummy project.",
-    technologies: ["HTML", "CSS", "Javascript", "MySQL"],
-    path: "#contact",
-  },
-  {
-    image: project3,
-    title: "Binance",
-    description:
-      "This is a dummy project.",
-    technologies: ["HTML", "CSS", "Javascript", "MySQL"],
-    path: "https://twitter.com",
-  },
-  {
-    image: project4,
-    title: "Bybit",
-    description:
-      "This is a dummy project.",
-    technologies: ["HTML", "CSS", "Javascript", "MySQL"],
-    path: "#link",
-  },
+  }
 ];
 
 const ScrollReveal = ({ children }: ScrollProps) => {

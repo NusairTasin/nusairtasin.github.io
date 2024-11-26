@@ -53,10 +53,7 @@ const Hero = () => {
             Web Developer
           </h3>
           <p className="md:text-base text-pretty text-sm text-gray-400">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-            debitis ipsam nisi assumenda laudantium error a quaerat ex, nesciunt
-            quam atque fuga. Deserunt iste expedita explicabo voluptatibus iusto
-            recusandae eaque?
+          Hi, I'm Nusair Tasin, a passionate problem solver and web developer, currently pursuing my degree in Computer Science and Engineering at Bangladesh University of Professionals (BUP). I’m currently deepening my expertise in Data Structures & Algorithms and Backend development.
           </p>
         </motion.div>
       </div>
