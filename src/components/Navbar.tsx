@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 const menuItems = [
   { title: "About", path: "#about" },
@@ -9,12 +9,7 @@ const menuItems = [
 ];
 const linkItems = [
   {
-    logo: <BsYoutube />,
-    path: "https://youtube.com",
-    color: "hover:text-red-500",
-  },
-  {
-    logo: <BsLinkedin />,
+    logo: <BsLinkedin />, 
     path: "https://linkedin.com/in/nusair-tasin",
     color: "hover:text-blue-500",
   },
@@ -25,7 +20,7 @@ const linkItems = [
   },
   {
     logo: <BsTwitterX />,
-    path: "https://twitter.com",
+    path: "https://x.com/nusairtasin0",
     color: "hover:text-white",
   },
 ];
