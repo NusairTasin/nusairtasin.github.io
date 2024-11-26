@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import { BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi';
+import { BiLogoCPlusPlus, BiLogoJava, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoPython, BiLogoReact, BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi';
 
 const techIstyle = 'cursor-pointer text-[80px] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]';
 const techItems = [
@@ -9,7 +9,10 @@ const techItems = [
   {logo: <BiLogoNodejs className={`text-green-500 ${techIstyle}`}/>},
   {logo: <BiLogoTailwindCss className={`text-sky-400 ${techIstyle}`}/>},
   {logo: <BiLogoMongodb className={`text-green-600 ${techIstyle}`}/>},
-
+  {logo: <BiLogoCPlusPlus className={`text-blue-600 ${techIstyle}`}/>},
+  {logo: <BiLogoJava className={`text-white ${techIstyle}`}/>},
+  {logo: <BiLogoPython className={`text-yellow-500 ${techIstyle}`}/>}
+  
 ] 
 
 const Tech = () => {
