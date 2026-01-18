@@ -6,6 +6,16 @@
   scroll-behavior: smooth;
 }
 
+html {
+  background-color: #00091d;
+  min-height: 100dvh;
+}
+
+body {
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
