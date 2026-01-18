@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
+import logoIcon from "../assets/image00001-removebg-preview.png";
 
 const menuItems = [
-  { title: "About", path: "#about" },
+  { title: "About", path: "#home" },
   { title: "Projects", path: "#projects" },
   { title: "Contact", path: "#contact" },
 ];
@@ -36,9 +37,12 @@ const Navbar = () => {
       <nav className="text-white fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-[#00091d]/50 sm:px-16 px-12 py-5 backdrop-blur-md md:justify-evenly">
         <a
           href="#home"
-          className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent opacity-90 hover:opacity-100 text-xl sm:text-2xl font-semibold transition-all duration-300"
+          className="flex items-center gap-2 opacity-90 hover:opacity-100 transition-all duration-300"
         >
-          Nusair Tasin
+          <img src={logoIcon} alt="logoIcon" className="w-[50px] block -my-5" />
+          <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent opacity-90 hover:opacity-100 text-xl sm:text-2xl font-semibold transition-all duration-300">
+            Nusair Tasin
+          </span>
         </a>
 
         <ul className="hidden md:flex gap-10">

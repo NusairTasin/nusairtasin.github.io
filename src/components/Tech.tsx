@@ -29,7 +29,7 @@ const Tech = () => {
       whileInView="visible"
       transition={{duration:0.5}}
       
-      className='text-4xl text-white font-light md:text-6xl'>Technologies</motion.h1>
+      className='text-4xl text-white font-light md:text-6xl'>Expertise</motion.h1>
 
       <div className='flex flex-wrap items-center justify-center gap-10 p-5'>
         {techItems.map((link, index) => (
